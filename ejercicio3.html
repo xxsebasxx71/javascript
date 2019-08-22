@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+//calcular salario para un empleado teniendo en cuenta su salario base. al empleado se le descuenta el 8% del 
+//salario base por concepto de seguridad social. si el empleado recibe el salario minimo mensual la empresa le da un
+// auxilio de transporte segun corresponda a el decreto vigente.
+
+       var salariobase= parseInt(prompt("digite salario base: "));
+       var seguridadsocial= salariobase*0.08;
+       var auxtransporte=97032; 
+       if(salariobase>=828116){
+            salario=(salariobase-seguridadsocial)+auxtransporte;
+        }else{
+
+            salario=salariobase-seguridadsocial;
+        }
+
+        alert(salario);
+
+
+
+
+        
+
+
+        </script>
+</body>
+</html>
