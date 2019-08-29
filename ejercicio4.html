@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+const subsidio=97002;
+hora=parseFloat(prompt("digite hora"));
+thora=parseFloat(prompt("digite valor de thoras"));
+pcomision=parseFloat(prompt("digite porcentaje de comisión"));
+ventas=parseFloat(prompt("digite monto total de las ventas"));
+
+comision= ventas* (pcomision/100);
+sueldoInicial=hora*thora;
+sueldoNeto= sueldoInicial + comision;
+
+document.write("<p>El porcentaje de comsion es: $"+pcomision+"</p>");     
+document.write("<p>El sueldo incial es: $"+sueldoInicial+"</p>");
+document.write("<p>El sueldo neto es: $"+sueldoNeto+"</p>");
+
+if(sueldoNeto<=828116){
+    sueldoNeto=sueldoNeto+subsidio;
+    console.log(sueldoNeto);
+}
+ 
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
